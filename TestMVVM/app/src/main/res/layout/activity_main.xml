@@ -10,6 +10,9 @@
         <variable
             name="user3"
             type="com.example.camdora.testmvvm.bean.User"/>
+        <variable
+            name="clickListener1"
+            type="android.view.View.OnClickListener" />
     </data>
 
     <LinearLayout
@@ -32,6 +35,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{String.valueOf(user3.age)}"/>
+        <Button
+            android:id="@+id/bt_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="改变"
+            android:onClick="@{clickListener1}"/>
     </LinearLayout>
 
 </layout>
